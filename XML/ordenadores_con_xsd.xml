@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>
+
+<ordenadores
+xmlns="http://www.iescierva.net"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.iescierva.net xsd/ordenadores.xsd">
+	
+	<ordenador tipo='Portatil'>
+		<hardware>
+				<placaBase formato='portatil' modelo='' version='' zocalo="ATOM" fabricante='Asus'>
+					<cpu frecuencia='1,6Ghz' nucleos='2' modelo='Atom n330' fabricante='Intel'></cpu>
+								
+					<memoria>
+						<banco posicion='1' frecuencia='667Mhz' capacidad='2GB' generacion='DDR2' fabricante="Kingston"></banco>
+						<banco posicion='2' frecuencia='667Mhz' capacidad='2GB' generacion='DDR2' fabricante="Kingston"></banco>
+					</memoria>
+					<bios>AWARD BIOS</bios>
+					<graficos>Nvidia</graficos>
+					<pcie velocidad='16x'>
+						<tarjetaGrafica>Nvidia ION</tarjetaGrafica>
+					</pcie>
+					<pci>N/D</pci>
+					<pci>N/D</pci>
+					<pci>N/D</pci>
+					<chipset>Intel ATOM</chipset>
+				</placaBase>
+				
+				<hd	velocidad='5400rpm' interfaz='SATA2' capacidad='320GB' fabricante="Hitachi"></hd>
+				<carcasa formato='portail' modelo='1201n' color='plata' fabricante='Asus'></carcasa>
+				<monitor formato='16:9' pulgadas='12.1' tecnologia='LCD' fabricante='Asus'></monitor>
+		</hardware>	
+		<software>
+			<sistemaOperativo nombre='Windowns' version='7' actualizacion='SP1' empresa='Microsoft'/>
+			<sistemaOperativo nombre='GNU/Linux' distribuicion='Ubuntu' version='12.04' denominacion='Pangolin Precise' empresa='Canonical'/>
+		</software>
+	
+	</ordenador>
+	<ordenador tipo='Escritorio'>
+	
+		<hardware>
+			<placaBase formato='mATX' modelo='GA-MA-UDH2' version='1.2' zocalo="AM3" fabricante='GigaByte'>
+				
+				<cpu frecuencia='3,4Ghz' nucleos='4' modelo='Phenom II 965' fabricante='AMD'></cpu>
+				<memoria>
+					<banco posicion='1' frecuencia='1600Mhz' capacidad='4' generacion='DDR3' fabricante="GSkill"></banco>
+					<banco posicion='2' frecuencia='1600Mhz' capacidad='4' generacion='DDR3' fabricante="GSkill"></banco>
+					<banco posicion='3' frecuencia='1600Mhz' capacidad='4' generacion='DDR3' fabricante="GSkill"></banco>
+					<banco posicion='4' frecuencia='1600Mhz' capacidad='4' generacion='DDR3' fabricante="Muskin"></banco>
+				</memoria>
+				<bios>AWARD BIOS</bios>
+				<graficos>ATI/AMD 4400HD</graficos>
+				<pcie velocidad='16x'>
+					<tarjetaGrafica>ATI AMD 4890HD DDR5 1024</tarjetaGrafica>
+				</pcie>
+				<pci>N/D</pci>
+				<pci>N/D</pci>
+				<pci>N/D</pci>
+				<chipset>AMD 880G</chipset>
+		
+			
+			</placaBase>
+			
+			<hd	velocidad='7200rpm' interfaz='SATA3' capacidad='2TB' fabricante="Western Digital"></hd>
+			<carcasa formato='mATX' tipo='cubo' color='rojo' fabricante='aerocool'></carcasa>
+			<monitor formato='16:9' pulgadas='23.6' tecnologia='LED' color='negro' fabricante='Asus'></monitor>
+			<fuente formato='ATX' potencia='650W' fabricante='OCZ'></fuente>
+		</hardware>	
+		<software>
+				<sistemaOperativo nombre='Windowns' version='7' actualizacion='SP1' empresa='Microsoft'/>
+				<sistemaOperativo nombre='GNU/Linux' distribuicion='Ubuntu' version='12.04' denominacion='Pangolin Precise' empresa='Canonical'/>
+				<sistemaOperativo nombre='GNU/Linux' distribuicion='OpenSuSE' version='12.1' empresa='Novell'/>
+		</software>
+		
+	</ordenador>
+	
+
+	
+</ordenadores> 

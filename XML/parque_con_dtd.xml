@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE parque SYSTEM "dtd/parque.dtd">
+
+<parque>
+	<estanque profundidad="2m" longitud="50m">
+		<animal especie="tortuga" fechaEntrada="21/05/2010"/>
+		<animal especie="carpa" fechaEntrada="22/05/2010"/>
+		<animal especie="pato" fechaEntrada="19/06/2010"/>
+	</estanque>
+	<vial tipoCalzada="calle" longitud="275m"/>
+	<vial tipoCalzada="senda" longitud="13m"/>
+	<mobiliario proveedor="ikea" fechaCompra="01/01/2010" objeto="banco"/>
+	<mobiliario proveedor="ikea" fechaCompra="01/01/2010" objeto="silla"/>
+	<mobiliario proveedor="parques SA" fechaCompra="01/05/2010" objeto="columpio"/>
+</parque>

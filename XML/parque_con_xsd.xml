@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>
+
+<parque
+xmlns="http://www.iescierva.net"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.iescierva.net xsd/parque.xsd">
+	
+	<estanque>
+		<longitud>273</longitud>
+		<profundidad>12</profundidad>
+		<animal>
+			<fechaEntrada>2010-01-01</fechaEntrada>
+			<especie>Tortuga</especie>
+		</animal>
+	</estanque>
+	<vial>
+		<tipoCalzada>senda</tipoCalzada>
+		<longitud>273</longitud>
+	</vial>
+	<mobiliario>
+		<fechaCompra>2010-05-21</fechaCompra>
+		<proveedor>ikea</proveedor>
+		<objeto>banco</objeto>
+	</mobiliario>
+
+</parque> 

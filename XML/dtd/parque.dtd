@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT parque (estanque* , vial+, mobiliario+)>
+
+<!ELEMENT estanque (animal*)>
+
+<!ATTLIST estanque 
+	profundidad CDATA #REQUIRED 
+	longitud CDATA #REQUIRED>
+
+<!ELEMENT animal (#PCDATA)>
+
+<!ATTLIST animal 
+	fechaEntrada CDATA #REQUIRED 
+	especie (tortuga|carpa|pato) #REQUIRED>
+	
+<!ELEMENT vial (#PCDATA)>
+
+<!ATTLIST vial
+	tipoCalzada (calle|senda) #REQUIRED
+	longitud CDATA #REQUIRED>
+	
+<!ELEMENT mobiliario (#PCDATA)>
+
+<!ATTLIST mobiliario
+	fechaCompra CDATA #REQUIRED
+	proveedor CDATA #REQUIRED
+	objeto (banco|silla|tobogán|columpio) #IMPLIED >
+	
+	

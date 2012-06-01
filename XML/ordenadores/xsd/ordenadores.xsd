@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+targetNamespace='http://www.iescierva.net'
+xmlns='http://www.iescierva.net' elementFormDefault='qualified'>
+
+<xs:element name='ordenadores'>
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element name='ordenador' maxOccurs='unbounded'>
+			<xs:complexType>
+				<xs:sequence>
+					
+					<xs:element name='hardware'>	
+						<xs:complexType>
+							<xs:sequence>
+						
+								<xs:element name='placaBase' maxOccurs='1'>
+									<xs:complexType>
+									
+										<xs:sequence>
+											<xs:element name='cpu' maxOccurs='unbounded'>
+												<xs:complexType>
+													
+														<xs:attribute name='frecuencia' type='xs:string' use='required'/>
+														<xs:attribute name='nucleos' type='xs:string' use='required'/>
+														<xs:attribute name='modelo' type='xs:string' use='required'/>
+														<xs:attribute name='fabricante' type='xs:string' use='required'/>
+													
+												</xs:complexType>
+											</xs:element>
+									
+											<xs:element name='memoria' maxOccurs='1'>
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name='banco' maxOccurs='4'>
+															<xs:complexType>
+														
+															
+																<xs:attribute name='posicion' type='xs:string' use='required'/>
+																<xs:attribute name='frecuencia' type='xs:string' use='required'/>
+																<xs:attribute name='capacidad' type='xs:string' use='required'/>
+																<xs:attribute name='generacion' type='xs:string' use='required'/>
+																<xs:attribute name='fabricante' type='xs:string' use='required'/>
+															
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+												
+											<xs:element name='bios' maxOccurs='2' type='xs:string'/>
+									
+											<xs:element name='graficos' maxOccurs='1' type='xs:string'/>
+												
+											<xs:element name='pcie' maxOccurs='4'>
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name='tarjetaGrafica' maxOccurs='1' type='xs:string'></xs:element>
+													</xs:sequence>
+													<xs:attribute name='velocidad' type='xs:string' use='required'/>
+												</xs:complexType>
+																					
+											</xs:element>
+												
+											<xs:element name='pci' maxOccurs='4' type='xs:string'/>
+						
+											<xs:element name='chipset' type='xs:string'/>
+													
+										</xs:sequence>
+									
+										<xs:attribute name='formato' type='xs:string'/>
+										<xs:attribute name='modelo' type='xs:string'/>
+										<xs:attribute name='version' type='xs:string'/>
+										<xs:attribute name='zocalo' type='xs:string'/>
+										<xs:attribute name='fabricante' type='xs:string'/>
+													
+									</xs:complexType>
+								</xs:element>
+						
+																	
+								<xs:element name='hd' maxOccurs='unbounded'>
+										<xs:complexType>
+											
+												<xs:attribute name='velocidad' type='xs:string' use='required'/>
+												<xs:attribute name='interfaz' type='xs:string' use='required'/>
+												<xs:attribute name='capacidad' type='xs:string' use='required'/>
+												<xs:attribute name='fabricante' type='xs:string' use='required'/>
+											
+										</xs:complexType>
+									</xs:element>
+														
+								<xs:element name='carcasa' maxOccurs='1'>
+										<xs:complexType>
+											
+												<xs:attribute name='formato' type='xs:string' use='required'/>
+												<xs:attribute name='tipo' type='xs:string'/>
+												<xs:attribute name='modelo' type='xs:string'/>
+												<xs:attribute name='color' type='xs:string' use='required'/>
+												<xs:attribute name='fabricante' type='xs:string' use='required'/>
+										
+										</xs:complexType>
+									</xs:element>
+																		
+								<xs:element name='monitor' maxOccurs='unbounded'>
+										<xs:complexType>
+											
+												<xs:attribute name='formato' type='xs:string' use='required'/>
+												<xs:attribute name='pulgadas' type='xs:string' use='required'/>
+												<xs:attribute name='tecnologia' type='xs:string' use='required'/>
+												<xs:attribute name='color' type='xs:string'/>
+												<xs:attribute name='fabricante' type='xs:string' use='required'/>
+											
+										</xs:complexType>
+									</xs:element>
+								
+								<xs:element name='fuente' maxOccurs='1' minOccurs='0'>
+									<xs:complexType>
+										
+											<xs:attribute name='formato' type='xs:string' use='required'/>
+											<xs:attribute name='potencia' type='xs:string' use='required'/>
+											<xs:attribute name='fabricante' type='xs:string' use='required'/>
+										
+										
+									</xs:complexType>
+									
+								</xs:element>
+																							
+							</xs:sequence>
+					
+						</xs:complexType>
+						</xs:element>	
+						<xs:element name='software' >
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name='sistemaOperativo' maxOccurs='unbounded'>
+										<xs:complexType>
+											
+												<xs:attribute name='nombre' type='xs:string' use='required'/>
+												<xs:attribute name='distribuicion' type='xs:string'/>
+												<xs:attribute name='version' type='xs:string' use='required'/>
+												<xs:attribute name='actualizacion' type='xs:string'/>
+												<xs:attribute name='denominacion' type='xs:string'/>
+												<xs:attribute name='empresa' type='xs:string' use='required'/>
+											
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+									
+						
+						</xs:element>
+		
+					
+				</xs:sequence>
+				<xs:attribute name='tipo' type='xs:string' use='required'/>
+			</xs:complexType>
+		</xs:element>
+		
+		
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 
+
+
+
+
+
+	
+		
+		
+
+			
+				
+			
+
+				
+				
+			
+
+				
+	
+				
+
+				
+
+		
+
+	
+		
+		

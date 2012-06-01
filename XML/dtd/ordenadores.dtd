@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT ordenadores (ordenador*)>
+
+	<!ELEMENT ordenador (hardware,software)>
+	<!ATTLIST ordenador tipo CDATA #REQUIRED>
+		<!ELEMENT hardware (placaBase,hd,carcasa,monitor,fuente?)>
+		
+			<!ELEMENT placaBase (cpu+,memoria,bios,graficos*,pcie?,pci*,chipset)>
+			<!ATTLIST placaBase 
+				formato CDATA #REQUIRED 
+				modelo CDATA #REQUIRED
+				version CDATA #REQUIRED 
+				zocalo CDATA #REQUIRED 
+				fabricante CDATA #REQUIRED 
+				>
+			
+				<!ELEMENT cpu (#PCDATA)>
+				<!ATTLIST cpu 
+					frecuencia CDATA #REQUIRED 
+					nucleos CDATA #REQUIRED
+					modelo CDATA #REQUIRED 
+					fabricante CDATA #REQUIRED 
+					>
+				<!ELEMENT memoria (banco+)>
+					<!ELEMENT banco (#PCDATA)>
+					<!ATTLIST banco 
+						posicion CDATA #REQUIRED 
+						frecuencia CDATA #REQUIRED
+						capacidad CDATA #REQUIRED 
+						generacion CDATA #REQUIRED 
+						fabricante CDATA #REQUIRED 
+					>
+				<!ELEMENT bios (#PCDATA)>
+				<!ELEMENT graficos (#PCDATA)>
+				<!ELEMENT pcie (tarjetaGrafica?)>
+				<!ATTLIST pcie velocidad CDATA #REQUIRED>
+						<!ELEMENT tarjetaGrafica (#PCDATA)>
+				
+				<!ELEMENT pci (#PCDATA)>
+				<!ELEMENT chipset (#PCDATA)>
+				
+			<!ELEMENT hd (#PCDATA)>
+			<!ATTLIST hd
+				velocidad CDATA #REQUIRED 
+				interfaz CDATA #REQUIRED
+				capacidad CDATA #REQUIRED 
+				fabricante CDATA #REQUIRED 
+				>
+				
+			<!ELEMENT carcasa (#PCDATA)>
+			
+			<!ATTLIST carcasa
+				formato CDATA #REQUIRED 
+				tipo CDATA #IMPLIED
+				modelo CDATA #IMPLIED
+				color CDATA #IMPLIED 
+				fabricante CDATA #REQUIRED 
+				>
+				
+			<!ELEMENT monitor (#PCDATA)>			
+			<!ATTLIST monitor
+				formato CDATA #REQUIRED 
+				pulgadas CDATA #REQUIRED
+				tecnologia CDATA #REQUIRED 
+				color CDATA #IMPLIED 
+				fabricante CDATA #REQUIRED 
+				>
+				
+			<!ELEMENT fuente (#PCDATA)>			
+			<!ATTLIST fuente
+				formato CDATA #REQUIRED 
+				potencia CDATA #REQUIRED
+				fabricante CDATA #REQUIRED 
+				>
+		
+		<!ELEMENT software (sistemaOperativo+)>
+			<!ELEMENT sistemaOperativo (#PCDATA)>
+			<!ATTLIST sistemaOperativo
+				nombre CDATA #REQUIRED 
+				distribuicion CDATA #IMPLIED 
+				version CDATA #REQUIRED
+				actualizacion CDATA #IMPLIED 
+				denominacion CDATA #IMPLIED 
+				empresa CDATA #REQUIRED 
+				>
+	
+		
+		

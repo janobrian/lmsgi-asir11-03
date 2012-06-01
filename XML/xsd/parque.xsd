@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.iescierva.net"
+xmlns="http://www.iescierva.net" elementFormDefault="qualified">
+
+<xs:element name="parque">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element name="estanque">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="longitud" type="xs:integer"/>
+					<xs:element name="profundidad" type="xs:integer"/>
+					<xs:element name="animal">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="fechaEntrada" type="xs:date"/>
+								<xs:element name="especie" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="vial">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="tipoCalzada" type="xs:string"></xs:element>
+					<xs:element name="longitud" type="xs:integer"></xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="mobiliario">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="fechaCompra" type="xs:date"/>
+					<xs:element name="proveedor" type="xs:string"/>
+					<xs:element name="objeto" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 
